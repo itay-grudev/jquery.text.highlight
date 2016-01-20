@@ -25,7 +25,7 @@ $('h1').textHighlight(['World', 'World'], {
 $('h1').removeHighlight();
 ```
 
-Each line will produce the following markup:
+Each line will produce the corresponding markup:
 
 ```html
 <h1><mark>Hello</mark> World</h1>
