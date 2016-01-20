@@ -1,7 +1,8 @@
 jQuery Text Highlight
 =====================
 
-jQuery Text Highlight is a plugin for highlighting words
+jQuery Text Highlight is a plugin for highlighting Words, Text or Regular
+Expressions within the DOM.
 
 Usage Examples
 --------------
@@ -21,6 +22,7 @@ $('h1').textHighlight(['World', 'World'], {
   class: '',
   caseSensitive: false
 });
+$('h1').removeHighlight();
 ```
 
 Each line will produce the following markup:
@@ -31,6 +33,35 @@ Each line will produce the following markup:
 <h1><mark>Hello</mark> <mark>World</mark></h1>
 <h1><mark>Hello</mark> <mark>World</mark></h1>
 ```
+
+Methods
+-------
+
+```javascript
+$.fn.textHighlight( term, options )
+```
+
+Encapsulates text within a specified element.
+
+* `term` could be either a string, a regular expression or an array of the two.
+* `options` is an object containing configuration options. See below for more details.
+
+```javascript
+$.fn.removeHighlight();
+```
+
+Removes the encapsulation applied by `$.fn.textHighlight`.
+
+Options
+-------
+
+|Option         | Type      | Description |
+| ------------- |---------- | ----------- |
+| element       | `object`  | The tag name in which the matched text should be encapsulated.|
+| class         | `string`  | A specific class to be applied on that element. |
+| caseSensitive | `boolean` | Whether to ignore the case of the specified keyword/regex. |
+
+_**Note:** The `caseSensitive` option overrides the `i` flag of Regular Expressions._
 
 License
 -------
