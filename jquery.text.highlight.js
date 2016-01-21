@@ -120,9 +120,7 @@
   // highlight initialization function
   $['fn']['removeHighlight'] = function ( options ) {
     return this['each'](function () {
-      if ( ! $['data']( this, 'plugin_textHighlight' ) ) {
-        return console.error('Cannot call removeHighlight on element that was not intialised from textHighlight.');
-      }
+      if ( ! $['data']( this, 'plugin_textHighlight' ) ) return;
       $['data']( this, 'plugin_textHighlight' ).remove();
       $['removeData']( this, 'plugin_textHighlight' );
     });
