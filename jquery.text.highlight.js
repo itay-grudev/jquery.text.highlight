@@ -34,7 +34,8 @@
     options = $['extend']( {}, {
       'element': 'mark',
       'class': '',
-      'caseSensitive': false
+      'caseSensitive': false,
+      'ignore': undefined
     }, options);
 
     function processNode( term, node ) {
@@ -73,6 +74,8 @@
       } else if( node.nodeType == Node.ELEMENT_NODE && node.childNodes &&
                  ! /(script|style)/i.test( node.tagName ) &&
                  ! node.hasAttribute('data-text-highlight') ) {
+        if( options['ignore'] !== undefined && $(node).is(options['ignore']) )
+          return 0;
         for( var i = 0; i < node.childNodes.length; ++i ) {
           i += processNode( term, node.childNodes[i] );
         }

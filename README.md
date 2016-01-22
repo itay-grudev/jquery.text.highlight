@@ -55,11 +55,12 @@ Removes the encapsulation applied by `$.fn.textHighlight`.
 Options
 -------
 
-|Option         | Type      | Description |
-| ------------- |---------- | ----------- |
-| element       | `object`  | The tag name in which the matched text should be encapsulated.|
-| class         | `string`  | A specific class to be applied on that element. |
-| caseSensitive | `boolean` | Whether to ignore the case of the specified keyword/regex. |
+|Option         | Type       | Description |
+| ------------- |----------- | ----------- |
+| element       | `object`   | The tag name in which the matched text should be encapsulated.|
+| class         | `string`   | A specific class to be applied on that element. |
+| caseSensitive | `boolean`  | Whether to ignore the case of the specified keyword/regex. |
+| ignore        | `selector` | A selector that specifies a subset of elements that should be ignored. |
 
 _**Note:** The `caseSensitive` option overrides the `i` flag of Regular Expressions._
 
