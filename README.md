@@ -45,7 +45,7 @@ $.fn.textHighlight( term, options )
 
 Encapsulates text within a specified element.
 
-* `term` could be either a string, a regular expression or an array of the two.
+* `term` could be either a string, a regular expression or an array of both.
 * `options` is an object containing configuration options. See below for more details.
 
 ```javascript
@@ -60,7 +60,7 @@ Options
 |Option         | Type       | Description |
 | ------------- |----------- | ----------- |
 | element       | `object`   | The tag name in which the matched text should be encapsulated.|
-| class         | `string`   | A specific class to be applied on that element. |
+| class         | `string`   | A specific class to be added to that element. |
 | caseSensitive | `boolean`  | Whether to ignore the case of the specified keyword/regex. |
 | ignore        | `selector` | A selector that specifies a subset of elements that should be ignored. |
 
