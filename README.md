@@ -30,10 +30,22 @@ $('h1').removeHighlight();
 Each line will produce the corresponding markup:
 
 ```html
-<h1><mark>Hello</mark> World</h1>
-<h1>Hello <mark>World</mark></h1>
-<h1><mark>Hello</mark> <mark>World</mark></h1>
-<h1><mark>Hello</mark> <mark>World</mark></h1>
+<h1>
+  <mark>Hello</mark>
+  World
+</h1>
+<h1>
+  Hello
+  <mark>World</mark>
+</h1>
+<h1>
+  <mark>Hello</mark>
+  <mark>World</mark>
+</h1>
+<h1>
+  <mark>Hello</mark>
+  <mark>World</mark>
+</h1>
 ```
 
 Methods
