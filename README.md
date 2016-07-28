@@ -18,8 +18,8 @@ Given the following html:
 ```javascript
 $('h1').textHighlight('Hello');
 $('h1').textHighlight(/World/);
-$('h1').textHighlight([/World/, 'World']);
-$('h1').textHighlight(['World', 'World'], {
+$('h1').textHighlight([/Hello/, 'World']);
+$('h1').textHighlight(['Hello', 'World'], {
   element: 'mark',
   class: '',
   caseSensitive: false
