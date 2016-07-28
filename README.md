@@ -4,7 +4,7 @@ jQuery Text Highlight
 jQuery Text Highlight is a plugin for highlighting Words, Text or Regular
 Expressions within the DOM.
 
-_Feature requests will be welcome._
+_Feature requests are welcome._
 
 Usage Examples
 --------------
